@@ -8,8 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    padding-left: 55px;
-    margin-top: 40px;
+    margin: 40px 0 0 55px;
 }
 
 .line-with-nav {
@@ -53,7 +52,7 @@ header {
     position: relative;
 }
 
-nav a:before{
+.main-nav a:before{
     content: "";
     position: absolute;
     width: 100%;
