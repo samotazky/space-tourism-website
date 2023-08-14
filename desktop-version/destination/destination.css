@@ -49,6 +49,9 @@ header {
     line-height: normal;
     letter-spacing: 2.7px;
     margin-right: 50px;
+}
+
+.main-nav a {
     position: relative;
 }
 
@@ -123,6 +126,9 @@ main {
     line-height: normal;
     letter-spacing: 2.7px;
     text-transform: uppercase;
+}
+
+.secondary-nav a {
     position: relative;
 }
 
