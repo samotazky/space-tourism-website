@@ -136,8 +136,13 @@ main {
 
 }
 
+.employees {
+    cursor: pointer;
+}
+
+/**right-side*/
+
 .right-side img {
     width: 568.072px;
     height: 712px;
-    flex-shrink: 0;
 }
