@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    margin: 40px 0 0 55px;
+    margin: 2.5em 0 0 3.4375em;
 }
 
 .line-with-nav {
@@ -17,11 +17,11 @@ header {
 }
 
 .line {
-    width: 473px;
+    width: 29.5625em;
     height: 1px;
     opacity: 0.2515;
     background: #FFF;
-    margin:0 -30px 0 64px;
+    margin:0 -1.875em 0 4em;
     z-index: 2;
 }
 
@@ -29,26 +29,25 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 830px;
-    height: 96px;
+    width: 51.875em;
+    height: 6em;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.774227142333984px);
 }
 
 .main-nav ul {
-    list-style: none;
     display: flex;
 }
 
 .main-nav li {
     color: #FFF;
     font-family: "Barlow Condensed";
-    font-size: 16px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 2.7px;
-    margin-right: 50px;
+    letter-spacing: 0.16875em;
+    margin-right: 3.125em;
 }
 
 .main-nav a {
@@ -78,7 +77,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 62px 137px 94px 165px;
+    margin: 3.875em 8.5625em 5.875em 10.3125em;
 }
 
 /**left-side */
@@ -91,20 +90,20 @@ main {
     line-height: normal;
     letter-spacing: 4.725px;
     text-transform: uppercase;
-    margin-bottom: 154px;
-    margin-top: 14px;
+    margin-bottom: 5.5em;
+    margin-top: 0.5em;
 }
 
 .left-side h3 {
     color: #FFF;
     font-family: Bellefair;
-    font-size: 32px;
+    font-size: 2em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     opacity: 0.5042;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
 }
 
 .left-side h1 {
@@ -115,25 +114,23 @@ main {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 27px;
+    margin-bottom: 0.48214285714285715em;
 }
 
 .left-side p {
-    width: 444px;
+    width: 24.666666666666668em;
     color: #D0D6F9;
     font-family: Barlow;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 177.778%;
-    margin-bottom: 120px;
+    margin-bottom: 6.666666666666667em;
 }
 
 .left-side span {
-    width: 132px;
-    height: 15px;
-    flex-shrink: 0;
-
+    width: 8.25em;
+    height: 0.9375em;
 }
 
 .employees {
@@ -143,6 +140,6 @@ main {
 /**right-side*/
 
 .right-side img {
-    width: 568.072px;
-    height: 712px;
+    width: 35.5045em;
+    height: 44.5em;
 }

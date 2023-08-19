@@ -36,7 +36,6 @@ header {
 }
 
 .main-nav ul {
-    list-style: none;
     display: flex;
 }
 
@@ -111,7 +110,6 @@ main {
 
 .secondary-nav ul {
     display: flex;
-    list-style: none;
     gap: 36px;
     padding: 0;
     margin-bottom: 52px;
