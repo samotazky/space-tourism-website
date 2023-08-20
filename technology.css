@@ -80,6 +80,7 @@ main {
     justify-content: space-between;
     margin-left: 10.3125em;
 }
+
 /**left-side */
 .left-side {
     margin-top: 76px;
@@ -92,6 +93,29 @@ main {
 .left {
     margin-right: 5em;
 }
+/*
+.left svg {
+    margin-bottom: 32px;
+}*/
+
+.left button {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 32px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    color: #FFF;
+    font-family: Bellefair;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
 
 
 .left-side h2 {
