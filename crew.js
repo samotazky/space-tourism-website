@@ -75,13 +75,13 @@ anoushehBtn.addEventListener("click", () => {
 
 let employeesCircles = document.querySelectorAll(".crew-nav .employees");
 
-
+/*
 function updateEmployeeInfo(index) {
     employeesFocus.textContent = employeesArray[index].focus
     employeesName.textContent = employeesArray[index].name
     employeesText.textContent = employeesArray[index].text
     employeesImage.src = employeesArray[index].image
-}
+}*/
 
 employeesCircles.forEach(circle => {
     circle.addEventListener("click", () => {
@@ -92,8 +92,8 @@ employeesCircles.forEach(circle => {
                 otherCircle.style.opacity = 0.174363;
             }
         });
-        
+/*
         let index = Array.from(employeesCircles).indexOf(circle);
-        updateEmployeeInfo(index);
+        updateEmployeeInfo(index);*/
     });
 });

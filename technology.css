@@ -118,6 +118,10 @@ main {
     cursor: pointer;
 }
 
+.left button:last-child {
+    margin: 0;
+}
+
 .left button:nth-child(1) {
     background: #fff;
     color: #0B0D17;
@@ -177,7 +181,7 @@ main {
 
 /**right-side */
 .right-side img{
-    width: 552px;
+    width: 515px;
     height: 527px;
     margin-top: 136px;
 }
