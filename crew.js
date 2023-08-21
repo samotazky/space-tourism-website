@@ -92,7 +92,7 @@ employeesCircles.forEach(circle => {
                 otherCircle.style.opacity = 0.174363;
             }
         });
-
+        
         let index = Array.from(employeesCircles).indexOf(circle);
         updateEmployeeInfo(index);
     });

@@ -114,9 +114,14 @@ main {
     font-size: 32px;
     font-weight: 400;
     letter-spacing: 2px;
+
+    cursor: pointer;
 }
 
-
+.left button:nth-child(1) {
+    background: #fff;
+    color: #0B0D17;
+}
 
 .left-side h2 {
     color: #FFF;
