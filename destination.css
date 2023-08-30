@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    margin: 2.5rem 0 0 3.4375rem;
+    margin: 40px 0 0 55px;
 }
 
 .line-with-nav {
@@ -17,11 +17,11 @@ header {
 }
 
 .line {
-    width: 29.5625rem;
-    height: .0625rem;
+    width: 473px;
+    height: 1px;
     opacity: 0.2515;
     background: #FFF;
-    margin:0 -1.875rem 0 4rem;
+    margin:0 -26.25px 0 56px;
     z-index: 2;
 }
 
@@ -29,10 +29,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 51.875rem;
-    height: 6rem;
+    width: 830px;
+    height: 96px;
     background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(2.548389rem);
+    backdrop-filter: blur(40.774px);
 }
 
 .main-nav ul {
@@ -41,13 +41,13 @@ header {
 
 .main-nav li {
     color: #FFF;
-    font-family: "Barlow Condensed";
-    font-size: 1rem;
+    font-family: Barlow Condensed;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: .16875rem;
-    margin-right: 3.125rem;
+    letter-spacing: 2.7px;
+    margin-right: 50px;
 }
 
 .main-nav a {
@@ -58,9 +58,9 @@ header {
     content: "";
     position: absolute;
     width: 100%;
-    height: .1875rem;
+    height: 3px;
     background: #fff;
-    top: 3.375rem;
+    top: 54px;
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
@@ -73,6 +73,7 @@ nav a:focus:before {
 }
 
 /**MAIN */
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -103,26 +104,26 @@ main {
 
 /**right-side */
 .right-side {
-    width: 27.8125rem;
-    height: 29.5rem;
-    margin-top: 6.125rem;
+    width: 445px;
+    height: 472px;
+    margin-top: 98px;
 }
 
 .secondary-nav ul {
     display: flex;
-    gap: 2.25rem;
+    gap: 36px;
     padding: 0;
-    margin-bottom: 3.25rem;
+    margin-bottom: 52px;
 }
 
 .secondary-nav ul li {
     color: #D0D6F9;
     font-family: Barlow Condensed;
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: .16875rem;
+    letter-spacing: 2.7px;
     text-transform: uppercase;
 }
 
@@ -130,12 +131,12 @@ main {
     position: relative;
 }
 
-.secondary-nav a:before{
+.secondary-nav a:before {
     content: "";
     position: absolute;
     width: 100%;
-    height: .1875rem;
-    top: 1.75rem;
+    height: 3px;
+    top: 28px;
     background: #fff;
     visibility: hidden;
     transform: scaleX(0);
@@ -145,7 +146,7 @@ main {
 .right-side h1 {
     color: #FFF;
     font-family: Bellefair;
-    font-size: 6.25rem;
+    font-size: 100px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -155,48 +156,183 @@ main {
 .right-side p {
     color: #D0D6F9;
     font-family: Barlow;
-    font-size: 1.125rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 177.778%;
 }
 
 .line-between-text {
-    width: 27.75rem;
-    height: .0625rem;
+    width: 444px;
+    height: 1px;
     background: #383B4B;
-    margin: 3.375rem 0 1.75rem 0;
+    margin:54px 0 28px 0;
 }
 
 
 /**metrics */
 .metrics {
     display: flex;
-    gap: 4.9375rem;
+    gap: 79px;
 }
 
 .metrics h3 {
     color: #D0D6F9;
     font-family: Barlow Condensed;
-    font-size: .875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: .147625rem;
+    letter-spacing: 2.362px;
     text-transform: uppercase;
 }
 
 .metrics p {
     color: #FFF;
     font-family: Bellefair;
-    font-size: 1.75rem;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    margin-top: .75rem;
+    margin-top: 12px;
 }
 
 @media only screen and (max-width: 376px) {
-    
+    body {
+        background: url(/starter-code/assets/destination/background-destination-mobile-bigger.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;     
+    }
+
+    /**HEADER */
+    header  {
+        margin: 0;
+        padding: 24px 24px 48px 24px;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .line-with-nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+    }
+
+    .active-menu {
+        display: block;
+    }
+
+    .line{
+        display: none;
+    }
+
+    nav {
+        width: 254px;
+        flex-shrink: 0;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        letter-spacing: 2.7px;
+        gap: 32px;
+        padding: 0;
+        position: absolute;
+        top: 118px;
+    }
+    /**menu-btns */
+    .menu-btn{
+    cursor: pointer;
+    width: 2.1875em;
+    height: 2.1875em;
+    z-index: 101;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 2.1875em;
+        height: 0.3125em;
+        background-color: #fff;
+        margin: 0.375em 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 0.6875em) rotate(-45deg);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        transform: translate(0, -0.6875em) rotate(45deg);
+    }
+
+    .line-with-nav.is-active {
+        visibility: visible;
+    }
+
+    /** MAIN */
+
+    main {
+        margin: 0;
+    }
+
+    .left-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .left-side h2 {
+        font-size: 16px;
+    }
+
+    .left-side  img {
+        width: 170px;
+        height: 170px;
+        margin: 0;
+    }
+
+    .right-side {
+        width: 327px;
+        height: auto;
+        margin: 26px auto;
+        text-align: center;
+    }
+
+    .secondary-nav {
+        margin: 0 auto;
+    }
+
+    .right-side h1 {
+        font-size: 56px;
+    }
+
+    .right-side p {
+        font-size: 15px;
+    }
+
+    .secondary-nav ul {
+        font-size: 14px;
+        justify-content: center;
+        gap: 1.625rem;
+        width: 237.5px;
+    }
+
+    .metrics {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 32px;
+        gap: 32px;
+    }
+
+    .metrics p {
+        font-size: 28px;
+    }
 }

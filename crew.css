@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    margin: 2.5em 0 0 3.4375em;
+    margin: 40px 0 0 55px;
 }
 
 .line-with-nav {
@@ -17,11 +17,11 @@ header {
 }
 
 .line {
-    width: 29.5625em;
+    width: 473px;
     height: 1px;
     opacity: 0.2515;
     background: #FFF;
-    margin:0 -1.875em 0 4em;
+    margin:0 -26.25px 0 56px;
     z-index: 2;
 }
 
@@ -29,10 +29,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 51.875em;
-    height: 6em;
+    width: 830px;
+    height: 96px;
     background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(40.774227142333984px);
+    backdrop-filter: blur(40.774px);
 }
 
 .main-nav ul {
@@ -41,13 +41,13 @@ header {
 
 .main-nav li {
     color: #FFF;
-    font-family: "Barlow Condensed";
-    font-size: 1em;
+    font-family: Barlow Condensed;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.16875em;
-    margin-right: 3.125em;
+    letter-spacing: 2.7px;
+    margin-right: 50px;
 }
 
 .main-nav a {
@@ -77,7 +77,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 3.875em 8.5625em 5.875em 10.3125em;
+    margin: 54.25px 119.875px 0px 165px;
 }
 
 /**left-side */
@@ -90,20 +90,20 @@ main {
     line-height: normal;
     letter-spacing: 4.725px;
     text-transform: uppercase;
-    margin-bottom: 5.5em;
-    margin-top: 0.5em;
+    margin-bottom: 154px;
+    margin-top: 14px;
 }
 
 .left-side h3 {
     color: #FFF;
     font-family: Bellefair;
-    font-size: 2em;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
     opacity: 0.5042;
-    margin-bottom: 0.9375em;
+    margin-bottom: 30px;
 }
 
 .left-side h1 {
@@ -114,23 +114,23 @@ main {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
-    margin-bottom: 0.48214285714285715em;
+    margin-bottom: 27px;
 }
 
 .left-side p {
-    width: 24.666666666666668em;
+    max-width: 444px;
     color: #D0D6F9;
     font-family: Barlow;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 177.778%;
-    margin-bottom: 6.666666666666667em;
+    margin-bottom: 120px;
 }
 
 .left-side span {
-    width: 8.25em;
-    height: 0.9375em;
+    max-width: 132px;
+    height: 15px;
 }
 
 .employees {
@@ -140,6 +140,14 @@ main {
 /**right-side*/
 
 .right-side img {
-    width: 35.5045em;
-    height: 44.5em;
+    max-width: 568.072px;
+    height: 712px;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background: url(/starter-code/assets/crew/background-crew-mobile.jpg) no-repeat;
+        overflow: hidden;
+    }
 }
