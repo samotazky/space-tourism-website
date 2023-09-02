@@ -83,8 +83,16 @@ header img {
 }
 
 /**MAIN*/
-/**left-side*/
-.left-side h2 {
+main {
+    display: grid;
+    grid-template-areas: 
+    "heading heading heading"
+    "rs rs rs"
+    "ls ls ls";
+    text-align: center;
+}
+
+.heading {
     color: #FFF;
     font-family: Barlow Condensed;
     font-size: 16px;
@@ -92,11 +100,20 @@ header img {
     line-height: normal;
     letter-spacing: 2.7px;
     text-transform: uppercase;
+    grid-area: heading;
+
+    margin-bottom: 32px;
 }
 
-.left-side span {
+.heading span {
     opacity: 0.25;
     font-weight: 700;
+}
+
+/**left-side*/
+
+.left-side {
+    grid-area: ls;
 }
 
 .right h3 {
@@ -106,6 +123,7 @@ header img {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2.362px;
+    margin-bottom: 9px;
 }
 
 .right h1 {
@@ -115,6 +133,7 @@ header img {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    margin-bottom: 16px;
 }
 
 .right p {
@@ -147,6 +166,7 @@ header img {
     letter-spacing: 2px;
 
     cursor: pointer;
+    margin-bottom: 26px;
 }
 
 .left button:nth-child(1) {
@@ -158,3 +178,12 @@ header img {
 .left button:focus {
     border: 1px solid #FFF;
 }
+
+/**right-side*/
+
+.right-side {
+    grid-area: rs;
+    margin-bottom: 34px;
+}
+
+
