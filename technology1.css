@@ -2,7 +2,6 @@ body {
     background: url(/starter-code/assets/technology/background-technology-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 24px 24px 24px 24px;
 }
 
 /**HEADER */
@@ -10,6 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+    padding: 24px 24px 48px 24px;
 }
 
 header img {
@@ -86,9 +86,9 @@ header img {
 main {
     display: grid;
     grid-template-areas: 
-    "heading heading heading"
-    "rs rs rs"
-    "ls ls ls";
+    "heading heading heading heading"
+    "rs rs rs rs"
+    "ls ls ls ls";
     text-align: center;
 }
 
@@ -114,6 +114,7 @@ main {
 
 .left-side {
     grid-area: ls;
+    padding: 0 24px 81px 24px;
 }
 
 .right h3 {
@@ -182,8 +183,281 @@ main {
 /**right-side*/
 
 .right-side {
+    background: url(/starter-code/assets/technology/image-launch-vehicle-landscape.jpg);
+    width: 375px;
+    height: 170px;
     grid-area: rs;
     margin-bottom: 34px;
 }
 
 
+@media (min-width: 768px) {
+    body {
+        background: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+    }
+     /**HEADER */
+     header {
+        padding-left: 39px;
+        margin-bottom: 106px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    header img {
+        width: 48px;
+        height: 48px;
+    }
+    /**menu button */
+    .menu-btn {
+        display: none;
+    }
+    
+    .line-with-nav {
+        display: flex;
+        
+        width: 450px;
+        height: 96px;
+    }
+
+    .main-nav {
+        flex-direction: row;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .main-nav li {
+        position: relative;
+    }
+
+    .main-nav li strong {
+        display: none;
+    }
+
+    .main-nav a {
+        letter-spacing: 2.362px;
+        font-size: 14px;
+    }
+
+    nav a:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        top: 57px;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    nav a:hover:before,
+    nav a:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .active:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        top: 57px;
+    }
+
+    .line-with-nav {
+        align-items: center;
+        position: static;
+    }
+
+    /**MAIN*/
+
+    .heading {
+        font-size: 20px;
+        letter-spacing: 3.375px;
+    }
+    
+    .left button {
+        width: 58px;
+        height: 58px;
+        font-size: 24px;
+    }
+
+    .right h3 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .right h1 {
+        font-size: 40px;
+    }
+
+    .right p {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 155px;
+    }
+
+    .right-side {
+        background: url(/starter-code/assets/technology/image-launch-vehicle-landscape.jpg);
+        background-repeat: no-repeat;
+        width: 768px;
+        height: 310px;
+        margin-bottom: 56px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        margin: 40px 0 76px 55px;
+        align-items: center;
+    }
+
+    .line-with-nav {
+        width: auto;
+        height: auto;
+        background: transparent;
+    }
+
+    .line {
+        width: 473px;
+        height: 1px;
+        opacity: 0.2515;
+        background: #FFF;
+        position: absolute;
+        left: -443px;
+    }
+
+    .main-nav {
+        width: 830px;
+        height: 96px;
+
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+    }
+
+    .main-nav a {
+        letter-spacing: 2.7px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        background: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        margin: 40px 0 76px 55px;
+        align-items: center;
+        padding: 0;
+    }
+
+    .line-with-nav {
+        width: auto;
+        height: auto;
+        background: transparent;
+    }
+
+    .line {
+        width: 473px;
+        height: 1px;
+        opacity: 0.2515;
+        background: #FFF;
+        position: absolute;
+        left: -443px;
+    }
+
+    .main-nav {
+        width: 830px;
+        height: 96px;
+
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+    }
+
+    .main-nav a {
+        letter-spacing: 2.7px;
+        font-size: 16px;
+    }
+
+    /**MAIN*/
+    main {
+        grid-template-areas: 
+        "heading .. .. rs"
+        "ls ls .. rs" 
+        ;
+        text-align: left;
+        justify-content: space-between;
+        margin-left: 165px;
+    }
+
+    .heading {
+        font-size: 28px;
+        letter-spacing: 4.725px;
+        margin-bottom: 137px;
+    }
+
+    .left-side {
+        display: grid;
+        grid-template-areas: 
+        "left right"
+        "left right"
+        ;
+    }
+
+    .left {
+        flex-direction: column;
+        gap: 32px;
+        grid-area: left;
+    }
+
+    .left button {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .right {
+        grid-area: right;
+    }
+
+    .right h3 {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .right h1 {
+        font-size: 56px;
+    }
+
+    .right p {
+        font-size: 18px;
+        line-height: 32px; 
+        padding: 0;
+        width: 444px;
+    }
+
+    .right-side {
+        background: url(/starter-code/assets/technology/image-launch-vehicle-portrait.jpg);
+        width: 415px;
+        height: 527px;
+        margin: 60px 0 0 0;
+    }
+}
