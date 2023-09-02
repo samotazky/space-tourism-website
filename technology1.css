@@ -187,6 +187,7 @@ main {
     width: 375px;
     height: 170px;
     grid-area: rs;
+    margin: 0 auto;
     margin-bottom: 34px;
 }
 
@@ -196,11 +197,10 @@ main {
         background: url(/starter-code/assets/technology/background-technology-tablet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 0;
     }
-     /**HEADER */
-     header {
-        padding-left: 39px;
+    /**HEADER */
+    header {
+        padding: 0 0 0 39px;
         margin-bottom: 106px;
         align-items: center;
         margin-bottom: 40px;
@@ -278,6 +278,8 @@ main {
     .heading {
         font-size: 20px;
         letter-spacing: 3.375px;
+        text-align: left;
+        margin: 0 0 60px 40px;
     }
     
     .left button {
@@ -310,48 +312,6 @@ main {
     }
 }
 
-@media (min-width: 1440px) {
-    body {
-        background: url(/starter-code/assets/destination/background-destination-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    header {
-        margin: 40px 0 76px 55px;
-        align-items: center;
-    }
-
-    .line-with-nav {
-        width: auto;
-        height: auto;
-        background: transparent;
-    }
-
-    .line {
-        width: 473px;
-        height: 1px;
-        opacity: 0.2515;
-        background: #FFF;
-        position: absolute;
-        left: -443px;
-    }
-
-    .main-nav {
-        width: 830px;
-        height: 96px;
-
-        align-items: center;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.774227142333984px);
-    }
-
-    .main-nav a {
-        letter-spacing: 2.7px;
-        font-size: 16px;
-    }
-}
 
 @media (min-width: 1440px) {
     body {

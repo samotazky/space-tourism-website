@@ -403,7 +403,7 @@ header img {
     /**MAIN*/
     main {
         display: flex;
-        gap: 157px;
+        justify-content: space-between;
         padding: 0 163px 45px 167px;
     }
     
