@@ -1,0 +1,454 @@
+body {
+    background: url(/starter-code/assets/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 24px 24px 24px 24px;
+}
+
+/**HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+/**primary nav */
+.line-with-nav {
+    width: 254px;
+    height: 667px;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+
+    display: none;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 118px;
+
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.main-nav li {
+    margin-left: 32px;
+}
+
+/**function */
+.is-active {
+    display: block;
+}
+
+/**menu-btns */
+.menu-btn{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+}
+    
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.line-with-nav.is-active {
+    visibility: visible;
+}
+
+/**MAIN*/
+
+/**left-side*/
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 26px;
+}
+
+.left-side h2 {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+
+.left-side span {
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+.left-side img {
+    width: 170px;
+    height: 170px;
+}
+
+/**right-side*/
+
+.secondary-nav {
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin-bottom: 20px;
+}
+/**function*/
+.secondary-nav li {
+    position: relative;
+}
+
+.secondary-nav li:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 23px;
+    background: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.secondary-nav li:hover:before,
+.secondary-nav li:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.right-side h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.right-side p {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; 
+}
+
+.line-between-text {
+    width: 327px;
+    height: 1px;
+    background: #383B4B;
+    margin: 32px 0 32px 0;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.distance,
+.travel-time {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.metrics h3 {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.metrics p {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    body {
+        background: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+    }
+
+    /**HEADER */
+    header {
+        padding-left: 39px;
+        margin-bottom: 106px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    header img {
+        width: 48px;
+        height: 48px;
+    }
+    /**menu button */
+    .menu-btn {
+        display: none;
+    }
+    
+    .line-with-nav {
+        display: flex;
+        
+        width: 450px;
+        height: 96px;
+    }
+
+    .main-nav {
+        flex-direction: row;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .main-nav li {
+        position: relative;
+    }
+
+    .main-nav li strong {
+        display: none;
+    }
+
+    .main-nav a {
+        letter-spacing: 2.362px;
+        font-size: 14px;
+    }
+
+    nav a:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        top: 57px;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out 0s;
+    }
+    
+    nav a:hover:before,
+    nav a:focus:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    .active:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        top: 57px;
+    }
+
+    .line-with-nav {
+        align-items: center;
+        position: static;
+    }
+
+    /**MAIN*/
+    main {
+        padding: 0 97px 62px 97px;
+    }
+    /**left-side*/
+    .left-side {
+        align-items: flex-start;
+        margin-bottom: 53px;
+    }
+
+    .left-side h2 {
+        font-size: 20px;
+        letter-spacing: 3.375px;
+    }
+
+    .left-side img {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .secondary-nav {
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-bottom: 32px;
+    }
+
+    .right-side h1 {
+        font-size: 80px;
+        margin-bottom: 8px;
+    }
+
+    .right-side p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .line-between-text {
+        width: 573px;
+        margin: 49px 0 28px 0;
+    }
+
+    .metrics {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .metrics h3 {
+        font-size: 14px;
+        letter-spacing: 2.362px;
+    }
+
+    .metrics p {
+        font-size: 28px;
+        
+    }
+
+}
+
+@media (min-width: 1440px) {
+    body {
+        background: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        margin: 40px 0 76px 55px;
+        align-items: center;
+    }
+
+    .line-with-nav {
+        width: auto;
+        height: auto;
+        background: transparent;
+    }
+
+    .line {
+        width: 473px;
+        height: 1px;
+        opacity: 0.2515;
+        background: #FFF;
+        position: absolute;
+        left: -443px;
+    }
+
+    .main-nav {
+        width: 830px;
+        height: 96px;
+
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+    }
+
+    .main-nav a {
+        letter-spacing: 2.7px;
+        font-size: 16px;
+    }
+
+    /**MAIN*/
+    main {
+        display: flex;
+        gap: 157px;
+        padding: 0 163px 45px 167px;
+    }
+    
+    /**left-side*/
+    .left-side {
+        gap: 97px;
+    }
+
+    .left-side h2 {
+        font-size: 28px;
+        letter-spacing: 4.725px;
+    }
+
+    .left-side img {
+        width: 455px;
+        height: 455px;
+    }
+
+    /**right-side*/
+    .right-side {
+        width: 444px;
+        margin-top: 98px;
+    }
+
+    .secondary-nav {
+        justify-content: left;
+    }
+
+    .right-side h1 {
+        text-align: left;
+        font-size: 100px;
+    }
+
+    .right-side p {
+        text-align: left;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .line-between-text {
+        width: 444px;
+        margin-top: 54px;
+    }
+
+    .metrics p {
+        font-size: 28px;
+    }
+}

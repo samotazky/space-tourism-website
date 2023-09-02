@@ -48,8 +48,8 @@ employeesName.textContent= employeesArray[0].name
 employeesText.textContent = employeesArray[0].text
 employeesImage.src = employeesArray[0].image
 
-employeesImage.style.width = "568.072px"
-employeesImage.style.height = "712px"
+// employeesImage.style.width = "568.072px"
+// employeesImage.style.height = "712px"
 })
 
 markBtn.addEventListener("click", () => {
@@ -58,8 +58,8 @@ markBtn.addEventListener("click", () => {
     employeesText.textContent = employeesArray[1].text
     employeesImage.src = employeesArray[1].image
 
-    employeesImage.style.width = "453.44px"
-    employeesImage.style.height = "654px"
+    // employeesImage.style.width = "453.44px"
+    // employeesImage.style.height = "654px"
     })
 
 victorBtn.addEventListener("click", () => {
@@ -68,8 +68,8 @@ victorBtn.addEventListener("click", () => {
     employeesText.textContent = employeesArray[2].text
     employeesImage.src = employeesArray[2].image
 
-    employeesImage.style.width = "554.388px"
-    employeesImage.style.height = "681px"
+    // employeesImage.style.width = "554.388px"
+    // employeesImage.style.height = "681px"
     })
 
 anoushehBtn.addEventListener("click", () => {
@@ -78,8 +78,8 @@ anoushehBtn.addEventListener("click", () => {
     employeesText.textContent = employeesArray[3].text
     employeesImage.src = employeesArray[3].image
     
-    employeesImage.style.width = "615.567px"
-    employeesImage.style.height = "607px"
+    // employeesImage.style.width = "615.567px"
+    // employeesImage.style.height = "607px"
     })
 
 

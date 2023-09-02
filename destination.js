@@ -1,3 +1,13 @@
+//MENU
+let menuBtn = document.querySelector(".menu-btn")
+let btn1 = document.querySelector(".bar-1")
+let menu = document.querySelector(".line-with-nav")
+
+document.querySelector(".menu-btn").onclick = function (event) {
+    menuBtn.classList.toggle("change")
+    menu.classList.toggle("is-active")
+}
+
 const moon = document.getElementById("moon-section")
 const mars = document.getElementById("mars-section")
 const europa = document.getElementById("europa-section")
@@ -43,7 +53,6 @@ moon.addEventListener("click", (e) => {
     planetTravel.textContent = planetArray[0].travelTime
     planetImg.src = planetArray[0].image
 
-    console.log(planetImg);
 })
 
 mars.addEventListener("click", (e) => {
@@ -71,7 +80,5 @@ titan.addEventListener("click", (e) => {
     planetDistance.textContent = planetArray[3].distance
     planetTravel.textContent = planetArray[3].travelTime
     planetImg.src = planetArray[3].image
-    console.log(planetImg);
 })
 
-console.log(planetImg);

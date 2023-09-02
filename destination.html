@@ -12,18 +12,24 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="/style-reset.css">
-  <link rel="stylesheet" href="destination.css">
+  <link rel="stylesheet" href="destination1.css">
 </head>
 <body>
     <header>
         <img src="/starter-code/assets/shared/logo.svg" alt="">
+
+        <div class="menu-btn">
+          <div class="bar1 "></div>
+          <div class="bar2 "></div>
+          <div class="bar3 "></div>
+        </div>
     
         <div class="line-with-nav">
           <div class="line"></div>
           <nav>
             <ul class="main-nav">
               <li><a href="/home.html"><strong>00</strong> Home</a></li>
-              <li><a href="/destination.html"><strong>01</strong> Destination</a></li>
+              <li class="active"><a href="/destination.html"><strong>01</strong> Destination</a></li>
               <li><a href="/crew.html"><strong>02</strong> Crew</a></li>
               <li><a href="/technology.html"><strong>03</strong> Technology</a></li>
             </ul>
@@ -35,16 +41,16 @@
         <div class="left-side">
             <h2><span>01</span> pick your destination</h2>
 
-            <img src="/starter-code/assets/destination/image-moon.png" width="450px" height="450px" alt="#">
+            <img src="/starter-code/assets/destination/image-moon.png" alt="#">
         </div>
 
         <div class="right-side">
-            <nav class="secondary-nav">
-                <ul>
-                    <li><a id="moon-section" href="#">moon</a></li>
-                    <li><a id="mars-section" href="#">mars</a></li>
-                    <li><a id="europa-section" href="#">europa</a></li>
-                    <li><a id="titan-section" href="#">titan</a></li>
+            <nav>
+                <ul class="secondary-nav">
+                    <li id="moon-section">moon</li>
+                    <li id="mars-section">mars</li>
+                    <li id="europa-section">europa</li>
+                    <li id="titan-section">titan</li>
                 </ul>
             </nav>
 
